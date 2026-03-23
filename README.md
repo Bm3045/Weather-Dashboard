@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# 🌤️ Weather Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive weather dashboard built with ReactJS that provides real-time weather information, hourly forecasts, and historical weather data analysis using the Open-Meteo API.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+[View Live Application](https://weather-dashboard.vercel.app)
 
-### `npm start`
+## 📋 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [API Integration](#api-integration)
+- [Project Structure](#project-structure)
+- [Performance Optimization](#performance-optimization)
+- [Mobile Responsiveness](#mobile-responsiveness)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+### Page 1: Current Weather & Hourly Forecast
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Current Weather Parameters
+- **Temperature** (Current, Min, Max with °C/°F toggle)
+- **Precipitation** levels
+- **Sunrise & Sunset** times
+- **Maximum Wind Speed** & direction
+- **Relative Humidity**
+- **UV Index**
+- **Precipitation Probability**
+- **Air Quality Metrics**:
+  - PM10 & PM2.5
+  - Carbon Monoxide (CO)
+  - Carbon Dioxide (CO2)
+  - Nitrogen Dioxide (NO2)
+  - Sulphur Dioxide (SO2)
 
-### `npm run build`
+#### Hourly Data Visualizations
+Interactive graphs for each parameter:
+- Temperature Trends
+- Relative Humidity Patterns
+- Precipitation Analysis
+- Visibility Levels
+- Wind Speed Variations
+- Combined PM10 & PM2.5 Chart
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Page 2: Historical Data Analysis (2-Year Range)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Historical Charts
+- **Temperature**: Mean, Max & Min trends
+- **Sun Cycle**: Sunrise & Sunset (IST timezone)
+- **Precipitation**: Total precipitation over time
+- **Wind Analysis**: Max wind speed & dominant direction
+- **Air Quality**: PM10 & PM2.5 historical trends
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Chart Features
+- 📊 Multiple chart types (Line, Bar, Composed)
+- 🔍 Zoom in/out functionality
+- 📜 Horizontal scrolling for dense data
+- 📱 Fully responsive design
 
-### `npm run eject`
+### Additional Features
+- 🎯 **Auto GPS Detection** - Automatically fetches user's location
+- 🌡️ **Temperature Unit Toggle** - Switch between Celsius and Fahrenheit
+- ⚡ **Performance Optimized** - Loads within 500ms
+- 📱 **Mobile-First Design** - Perfect on all screen sizes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Technology | Purpose |
+|------------|---------|
+| **React 18** | Frontend framework |
+| **React Router v6** | Navigation & routing |
+| **Recharts** | Data visualization & graphs |
+| **Axios** | API calls |
+| **Open-Meteo API** | Weather data source |
+| **CSS3** | Styling & animations |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-## Learn More
+### Setup Instructions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/weather-dashboard.git
+   cd weather-dashboard
