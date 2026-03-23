@@ -12,12 +12,7 @@ A comprehensive weather dashboard built with ReactJS that provides real-time wea
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [API Integration](#api-integration)
-- [Project Structure](#project-structure)
-- [Performance Optimization](#performance-optimization)
-- [Mobile Responsiveness](#mobile-responsiveness)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## ✨ Features
 
@@ -89,5 +84,13 @@ Interactive graphs for each parameter:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/weather-dashboard.git
+   git clone https://github.com/Bm3045/weather-dashboard.git
    cd weather-dashboard
+
+2. **Install dependencies**
+   ```bash
+   npm install
+
+3. **Start development server**
+   ```bash
+   npm start
