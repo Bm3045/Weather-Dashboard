@@ -1,0 +1,52 @@
+.hourly-graphs {
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hourly-graphs h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.graphs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.graph-container {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.graph-container h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .hourly-graphs {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .hourly-graphs h2 {
+    font-size: 1.2rem;
+  }
+  
+  .graph-container {
+    padding: 10px;
+  }
+  
+  .graph-container h3 {
+    font-size: 1rem;
+  }
+}
